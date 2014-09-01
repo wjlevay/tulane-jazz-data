@@ -34,7 +34,6 @@ class viafSearch:
 
 
 		
-
 		r = requests.get(self.viafURL.replace('{SEARCH}',searchVal))
 
 		time.sleep(self.requestDelay)
@@ -83,7 +82,13 @@ class viafSearch:
 
 							for titles in viafCluster.findall('{http://viaf.org/viaf/terms#}titles'):
 								for el in titles:
-									aResult['titles'] .append(el[0].text)
+
+									#they are contained in a sub work element that has a source and title
+									for workPart in el:
+
+										#is this the title element?
+										if (workPart.tag == '{http://viaf.org/viaf/terms#}title'):
+											aResult['titles'] .append(workPart.text)
 
 
 					results.append(aResult)
@@ -183,6 +188,8 @@ class viafSearch:
 		if(self.results[fullName]['tulane_dob'] == 'NULL' and len(searchResult) == 1):
 			quality = 'medium'
 
+
+
 		if(len(searchResult) > 1):
 			#Bill's attempt to find whitelisted terms in the "titles" field 
 
@@ -194,21 +201,35 @@ class viafSearch:
 
 			for aResult in searchResult:
 
+
 				titles = aResult['titles']
 
-				#check if there's a whitelisted term in the "titles" results
-				for term in terms:
-					if (titles.lower().find(term) != -1):
-						#then add the result to the new list if it's not already there
-						if aResult not in whitelistResult:
-							whitelistResult.append(aResult)
+				#titles is an array, loop through it
+				for aTitle in titles:
+
+
+					#check if there's a whitelisted term in the "titles" results
+					for term in terms:
+						if (aTitle.lower().find(term) != -1):
+							#then add the result to the new list if it's not already there
+							if aResult not in whitelistResult:
+								whitelistResult.append(aResult)
+
+
+
 
 			#if our new results list has one or more results, replace the original searchResult
 			if(len(whitelistResult) > 0):
 				searchResult = whitelistResult
+				
 
-			#then we still have to kick it back up to get a mapping quality...
-			#quality = 'many'
+			#after all that if we narrowed it down to a single person set it to high probability
+			if(len(searchResult) == 1):
+
+				print "THE WHITELIST WORKED ON THIS ONE!!!"
+				print searchResult
+				print "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+				quality = 'high'
 
 
 		if(len(searchResult) == 0):
@@ -224,10 +245,14 @@ class viafSearch:
 		self.results[fullName]['mapping'] = searchResult
 		self.results[fullName]['mapping_quality'] = quality
 
+		#safe it after each try, just to see the progress and not have to wait till the end to check it
+		self.saveFile()
+
+
 
 	def saveFile(self):
 		f = open(self.resultsFile, "w")
-		f.write(json.dumps(self.results))
+		f.write(json.dumps(self.results, indent=4, sort_keys=True))
 
 
 
