@@ -226,9 +226,9 @@ class viafSearch:
 			#after all that if we narrowed it down to a single person set it to high probability
 			if(len(searchResult) == 1):
 
-				print "THE WHITELIST WORKED ON THIS ONE!!!"
-				print searchResult
-				print "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+				print ("THE WHITELIST WORKED ON THIS ONE!!!")
+				print (searchResult)
+				print ("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 				quality = 'high'
 
 
