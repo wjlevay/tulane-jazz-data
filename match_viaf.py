@@ -11,8 +11,8 @@ class viafSearch:
 
 
 	viafURL = 'http://viaf.org/viaf/search?query=local.personalNames+%3D+{SEARCH}&httpAccept=text/xml'
-	sourceFile = 'tulane-no-dupes.csv'
-	resultsFile = 'tulane_results.json'
+	sourceFile = 'data/tulane-no-dupes.csv'
+	resultsFile = 'data/tulane_results.json'
 	results = {}
 	requestDelay = 0.1
 

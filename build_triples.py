@@ -41,7 +41,7 @@ photo_place = {}
 #set up the date dictionary
 photo_date = {}
 
-with open('tulane-refined.csv', 'r') as csvfile2:
+with open('data/tulane-refined.csv', 'r') as csvfile2:
 
 	#dumps the file into the cvs library with some info on how it is formatted
 	tulane_refined = csv.reader(csvfile2, delimiter=',')
@@ -79,7 +79,7 @@ knows_of_dict = {}
 
 
 #now let's create some triples
-with open('tulane_results.json') as viaf_matches_data:    
+with open('data/tulane_results.json') as viaf_matches_data:    
     viaf_matches = json.load(viaf_matches_data)
 
 
@@ -185,7 +185,7 @@ for a_uri in knows_of_dict:
 # 
 # }
 
-names.serialize("names.nt", format="nt")
+names.serialize("data/names.nt", format="nt")
 
 
 
