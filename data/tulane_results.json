@@ -8767,28 +8767,6 @@
         "mapping": [
             {
                 "altNames": [
-                    "Ory, Kid, 1890-1973",
-                    "Ory, Edward"
-                ],
-                "birthDate": "1890-12-25",
-                "deathDate": "1973-01-23",
-                "sources": [
-                    "RERO|vtls008925054",
-                    "LAC|0064D2424",
-                    "SUDOC|08053936X",
-                    "BNF|13898125",
-                    "ISNI|0000000118508759",
-                    "NSK|000069275"
-                ],
-                "titles": [
-                    "\u0098[\u009cHigh society]",
-                    "MUSKRAT RAMBLE",
-                    "TIGER RAG",
-                    "\u0098[\u009cWeary blues]"
-                ]
-            },
-            {
-                "altNames": [
                     "Ory, Kid, 1886-1973",
                     "Ory, Edward Kid, 1886-1973",
                     "Ory, Kid"
@@ -8814,7 +8792,8 @@
                 ]
             }
         ],
-        "mapping_quality": "low",
+        "comment": "Deleted one result and bumped quality from low to high. -BL",
+        "mapping_quality": "high",
         "tulane_dob": "",
         "tulane_dod": "",
         "tulane_first": "Edward",
@@ -9106,65 +9085,6 @@
         "mapping": [
             {
                 "altNames": [
-                    "Barrett, E. M. (Emma Moore), 1860-"
-                ],
-                "birthDate": "1860",
-                "deathDate": "0",
-                "sources": [
-                    "LC|n  88244559"
-                ],
-                "titles": [
-                    "Canning and preserving, 1916?:"
-                ]
-            },
-            {
-                "altNames": [
-                    "Molloy, Emma, 1839-1907"
-                ],
-                "birthDate": "1839-07-17",
-                "deathDate": "1907-05-14",
-                "sources": [
-                    "LC|n  99055689"
-                ],
-                "titles": [
-                    "Emma speaks out, c1999:"
-                ]
-            },
-            {
-                "altNames": [
-                    "Reeves, Emma Barrett, 1901-"
-                ],
-                "birthDate": "1901",
-                "deathDate": "0",
-                "sources": [
-                    "ISNI|0000000021464470",
-                    "LC|n  50047383"
-                ],
-                "titles": [
-                    "The Reeves review",
-                    "Some descendants of Adam Barringer",
-                    "Tennessee Smithology",
-                    "Three centuries of Ballingers in America"
-                ]
-            },
-            {
-                "altNames": [
-                    "Barrett, Emma.",
-                    "Barrett, E. (Emma)"
-                ],
-                "birthDate": "0",
-                "deathDate": "0",
-                "sources": [
-                    "NUKAT|n  02000312",
-                    "ISNI|000000011620767X",
-                    "LC|no2001093222"
-                ],
-                "titles": [
-                    "Youth prostitution in the new Europe"
-                ]
-            },
-            {
-                "altNames": [
                     "Barrett, Sweet Emma",
                     "Barrett, Sweet Emma (Emma)"
                 ],
@@ -9181,7 +9101,8 @@
                 ]
             }
         ],
-        "mapping_quality": "low",
+        "comment": "Deleted several results and bumped quality from low to high. -BL",
+        "mapping_quality": "high",
         "tulane_dob": "1897",
         "tulane_dod": "1983",
         "tulane_first": "Emma",
@@ -9554,85 +9475,6 @@
         "mapping": [
             {
                 "altNames": [
-                    "Domino, Fats"
-                ],
-                "birthDate": "0",
-                "deathDate": "0",
-                "sources": [
-                    "DNB|188269649"
-                ],
-                "titles": []
-            },
-            {
-                "altNames": [
-                    "Boone, Pat, 1934-....",
-                    "Boone, Pat",
-                    "Boone, S.",
-                    "Boone, Pat (Charles Eugene), 1934-"
-                ],
-                "birthDate": "1934-06-01",
-                "deathDate": "0",
-                "sources": [
-                    "NSK|000068090",
-                    "BNE|XX828457",
-                    "LC|n  81090007",
-                    "BNF|13891684",
-                    "NDL|001161357",
-                    "NLA|000035020264",
-                    "DNB|118661671",
-                    "ISNI|0000000084034304",
-                    "NKC|xx0030019",
-                    "SUDOC|118750712",
-                    "WKP|Pat_Boone",
-                    "NTA|07199727X",
-                    "NLP|a27825140",
-                    "NLI|000438521"
-                ],
-                "titles": [
-                    "Favorite Bible stories for the very young",
-                    "Get your life together",
-                    "Lover's lane",
-                    "New song",
-                    "Pat Boone",
-                    "Pray to win",
-                    "Rock file"
-                ]
-            },
-            {
-                "altNames": [
-                    "Bo Diddley, 1928-2008",
-                    "Diddley, Bo, 1928-2008",
-                    "MacDaniel, Ellas",
-                    "Bo Diddley, 1928-",
-                    "Diddley, Bo"
-                ],
-                "birthDate": "1928-12-30",
-                "deathDate": "2008-06-02",
-                "sources": [
-                    "LC|no 91015859",
-                    "NLA|000052525175",
-                    "DNB|119164752",
-                    "LNB|LNC10-000079296",
-                    "WKP|Bo_Diddley",
-                    "NSK|000051356",
-                    "BNE|XX1031518",
-                    "NTA|074959409",
-                    "NKC|js20050425002",
-                    "BNF|13893270",
-                    "ISNI|0000000108146598",
-                    "SUDOC|114617252"
-                ],
-                "titles": [
-                    "La Bamba original motion picture soundtrack.",
-                    "Bo Diddley.",
-                    "I'm a man",
-                    "Mona",
-                    "Road runner (2 min 43 s)",
-                    "What'd I say"
-                ]
-            },
-            {
-                "altNames": [
                     "Domino, Fats, 1928-....",
                     "Domino, Fats",
                     "Domino, Antoine Dominique",
@@ -9666,7 +9508,8 @@
                 ]
             }
         ],
-        "mapping_quality": "low",
+        "comment": "Deleted several results and bumped quality from low to high. -BL",
+        "mapping_quality": "high",
         "tulane_dob": "",
         "tulane_dod": "",
         "tulane_first": "Fats",
@@ -14438,39 +14281,6 @@
         "mapping": [
             {
                 "altNames": [
-                    "Bo Diddley, 1928-2008",
-                    "Diddley, Bo, 1928-2008",
-                    "MacDaniel, Ellas",
-                    "Bo Diddley, 1928-",
-                    "Diddley, Bo"
-                ],
-                "birthDate": "1928-12-30",
-                "deathDate": "2008-06-02",
-                "sources": [
-                    "LC|no 91015859",
-                    "NLA|000052525175",
-                    "DNB|119164752",
-                    "LNB|LNC10-000079296",
-                    "WKP|Bo_Diddley",
-                    "NSK|000051356",
-                    "BNE|XX1031518",
-                    "NTA|074959409",
-                    "NKC|js20050425002",
-                    "BNF|13893270",
-                    "ISNI|0000000108146598",
-                    "SUDOC|114617252"
-                ],
-                "titles": [
-                    "La Bamba original motion picture soundtrack.",
-                    "Bo Diddley.",
-                    "I'm a man",
-                    "Mona",
-                    "Road runner (2 min 43 s)",
-                    "What'd I say"
-                ]
-            },
-            {
-                "altNames": [
                     "Lewis, Jerry Lee, 1935-....",
                     "Lewis, Jerry Lee"
                 ],
@@ -14517,40 +14327,10 @@
                     "Whole lotta shakin' goin' on",
                     "You win again"
                 ]
-            },
-            {
-                "altNames": [
-                    "Rich, Charlie, 1932-1995",
-                    "Rich, Charlie"
-                ],
-                "birthDate": "1932-12-14",
-                "deathDate": "1995-07-25",
-                "sources": [
-                    "BIBSYS|x04000275",
-                    "ISNI|0000000071394642",
-                    "LC|n  87136204",
-                    "BNF|13898988",
-                    "WKP|Charlie_Rich",
-                    "NTA|07363445X",
-                    "DNB|134496639",
-                    "LAC|0064L2320",
-                    "BNE|XX1087796",
-                    "NLA|000040678970"
-                ],
-                "titles": [
-                    "Charlie Rich",
-                    "Country gold",
-                    "I don't want to have to marry you (3 min 03s)",
-                    "Every time you touch me",
-                    "Lonely weekends",
-                    "On my knees (3 min 11 s)",
-                    "Pictures and paintings",
-                    "\u0098A \u009cVery special love song (2 min 44 s)",
-                    "Whole Lotta shakin' goin' on"
-                ]
             }
         ],
-        "mapping_quality": "low",
+        "comment": "Deleted several results and bumped quality from low to high. -BL",
+        "mapping_quality": "high",
         "tulane_dob": "",
         "tulane_dod": "",
         "tulane_first": "Jerry Lee",
