@@ -19131,43 +19131,10 @@
                     "Yes! I'm in the barrel",
                     "Young Louis Armstrong (1930 - 1933)"
                 ]
-            },
-            {
-                "altNames": [
-                    "Armstrong, Lilian, 1903-1971"
-                ],
-                "birthDate": "1903-02-03",
-                "deathDate": "1971-08-27",
-                "sources": [
-                    "BNF|13890883",
-                    "SUDOC|080539386"
-                ],
-                "titles": [
-                    "Georgia grind (2 min 38 s)",
-                    "Gut bucket blues (2 min 48 s)",
-                    "Heebie jeebies (3 min 01 s)",
-                    "\u0098The \u009cHot fives",
-                    "Hotter than that",
-                    "I'm gonna gitcha (2 min 53 s)",
-                    "I'm in the barrel (2 min 43 s)",
-                    "King of the zulus 3 min 14 s)",
-                    "\u0098A \u009cKiss to build a dream on (5 min 36 s)",
-                    "Mahogany Hall stomp (4 min 10 s)",
-                    "Muskrat ramble (2 min 38 s)",
-                    "My heart (2 min 28 s)",
-                    "Of all the wrongs you done to me",
-                    "Oriental strut (3 min 08 s)",
-                    "Someday you'll be sorry (3 min 51 s)",
-                    "Struttin' with some barbecue (5 min 01 s)",
-                    "That's my desire (4 min 24 s)",
-                    "What a wonderful world (2 min 20 s)",
-                    "When the sainst go marching in (3 min 10 s)",
-                    "Who'sit (2 min 56 s)",
-                    "You're next (3 min 23 s)"
-                ]
             }
         ],
-        "mapping_quality": "low",
+        "comment": "Removed one result and changed quality from low to high. -BL",
+        "mapping_quality": "high",
         "tulane_dob": "1902",
         "tulane_dod": "1971",
         "tulane_first": "Lil Hardin",

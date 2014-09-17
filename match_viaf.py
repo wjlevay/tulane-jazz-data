@@ -194,7 +194,7 @@ class viafSearch:
 			#Bill's attempt to find whitelisted terms in the "titles" field 
 
 			#set up a whitelist of terms
-			terms = ['jazz', 'new orleans', 'ragtime', 'gospel', 'blues']
+			terms = ['jazz', 'new orleans', 'ragtime', 'gospel', 'blues',]
 
 			#set up the new whitelist results list
 			whitelistResult = []
@@ -203,6 +203,7 @@ class viafSearch:
 
 
 				titles = aResult['titles']
+				names = aResult['altNames']
 
 				#titles is an array, loop through it
 				for aTitle in titles:
@@ -211,6 +212,10 @@ class viafSearch:
 					#check if there's a whitelisted term in the "titles" results
 					for term in terms:
 						if (aTitle.lower().find(term) != -1):
+							
+							#check if the names match at least a little
+							#if self.results[fullName]['tulane_last'] in names:
+
 							#then add the result to the new list if it's not already there
 							if aResult not in whitelistResult:
 								whitelistResult.append(aResult)
