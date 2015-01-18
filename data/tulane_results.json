@@ -12073,7 +12073,8 @@
                     "DNB|123161134",
                     "NLA|000035982144",
                     "NLI|000021482",
-                    "BNF|12405762"
+                    "BNF|12405762",
+                    "WKP|Eubie_Blake"
                 ],
                 "titles": [
                     "Charleston rag",
@@ -18302,7 +18303,8 @@
                     "SUDOC|02729143X",
                     "BNF|12404114",
                     "BNE|XX1287793",
-                    "NKC|ola2002159329"
+                    "NKC|ola2002159329",
+                    "WKP|Jelly_Roll_Morton"
                 ],
                 "titles": [
                     "Black bottom stomp",
@@ -22929,8 +22931,14 @@
         "tulane_name": "Johnny Senac"
     },
     "Johnny St. Cyr": {
-        "mapping": [],
-        "mapping_quality": "none",
+        "mapping": [
+            {
+                "sources": [
+                    "WKP|Johnny_St._Cyr"
+                ]
+            }
+        ],
+        "mapping_quality": "high",
         "tulane_dob": "1890",
         "tulane_dod": "1966",
         "tulane_first": "Johnny",
@@ -24709,7 +24717,8 @@
                 "sources": [
                     "ISNI|0000000000708237",
                     "SUDOC|080539386",
-                    "BNF|13890883"
+                    "BNF|13890883",
+                    "WKP|Lil_Hardin_Armstrong"
                 ],
                 "titles": [
                     "Do you know what it means to miss New Orleans ? (3 min 56 s)",

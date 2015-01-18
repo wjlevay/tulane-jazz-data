@@ -141,7 +141,7 @@ for a_match in viaf_matches:
 
 					#does this photo have a placeURI in the photo_place dict?
 					if key in photo_place:
-						names.add(( URIRef(key), URIRef("http://xmlns.com/foaf/0.1/depicts"), URIRef(photo_place[key]) ))
+						names.add(( URIRef(key), URIRef("http://purl.org/dc/terms/spatial"), URIRef(photo_place[key]) ))
 
 					#does this photo have a date in the date dict?
 					if key in photo_date:
