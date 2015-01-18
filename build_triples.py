@@ -2,7 +2,7 @@
 #more info http://rdflib.readthedocs.org/en/latest/intro_to_creating_rdf.html
 
 from rdflib import Namespace, Literal, URIRef, Graph
-import csv, json
+import csv, json, re
 
 
 
@@ -145,7 +145,18 @@ for a_match in viaf_matches:
 
 					#does this photo have a date in the date dict?
 					if key in photo_date:
-						names.add(( URIRef(key), URIRef("http://purl.org/dc/terms/created"), Literal(photo_date[key]) ))
+
+						#use some regex to determine the date format and append a datatype IRI; see http://www.w3.org/TR/xmlschema-2/#date
+						if re.match('^[0-9]{4}-[0-9]{2}-[0-9]{2}$', photo_date[key]):
+							date_IRI = 'http://www.w3.org/2001/XMLSchema#date'
+						elif re.match('^[0-9]{4}-[0-9]{2}$', photo_date[key]):
+							date_IRI = 'http://www.w3.org/2001/XMLSchema#gYearMonth'
+						elif re.match('^[0-9]{4}$', photo_date[key]):
+							date_IRI = 'http://www.w3.org/2001/XMLSchema#gYear'
+						else:
+							date_IRI = 'http://www.w3.org/2001/XMLSchema#string'
+						
+						names.add(( URIRef(key), URIRef("http://purl.org/dc/terms/created"), Literal(photo_date[key], datatype=date_IRI) ))
 
 
 #matt: now we have a dict of photo urls that have the uris that appear in them, so we can say they know each other 
