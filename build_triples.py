@@ -4,33 +4,7 @@
 from rdflib import Namespace, Literal, URIRef, Graph
 import csv, json, re
 
-
-
 names = Graph()
-
-
-#matt: we don't need this anymore right?
-
-# no_dupes_index = {}
-
-# with open('tulane-no-dupes.csv', 'r') as csvfile:
-
-# 	#dumps the file into the cvs library with some info on how it is formated
-# 	no_dupes = csv.reader(csvfile, delimiter=',')
-	
-# 	for row in no_dupes:
-		
-# 		no_dupes_full_name = row[0]
-# 		no_dupes_id = row[5]
-
-# 		no_dupes_index[no_dupes_id] = no_dupes_full_name
-
-# print (no_dupes_index)
-
-
-
-
-
 
 #set up the photo dictionary
 photo_dict = {}
@@ -146,7 +120,7 @@ for a_match in viaf_matches:
 					#does this photo have a date in the date dict?
 					if key in photo_date:
 
-						#use some regex to determine the date format and append a datatype IRI; see http://www.w3.org/TR/xmlschema-2/#date
+						#use some regex to determine the date format and append a datatype IRI; see http://www.w3.org/TR/xmlschema-2/
 						if re.match('^[0-9]{4}-[0-9]{2}-[0-9]{2}$', photo_date[key]):
 							date_IRI = 'http://www.w3.org/2001/XMLSchema#date'
 						elif re.match('^[0-9]{4}-[0-9]{2}$', photo_date[key]):
